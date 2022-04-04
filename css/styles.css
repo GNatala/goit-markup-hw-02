@@ -65,8 +65,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
-    color: var(--main-text-color-light);
+    color: #757575;
+    /*color: var(--main-text-color-light);*/
 }
 .contact-top-link:hover,
 .contact-top-link:focus {
@@ -87,6 +87,7 @@ body {
 
 }
 .main-btn {
+font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -97,7 +98,10 @@ body {
 }
 .main-btn:hover,
 .main-btn:focus {
+   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;*/
 }
+
 /* ================= HERO ================= */
 /* ================= ADVANTAGES ================= */
 .advantages-list-title {
@@ -137,8 +141,17 @@ color: var(--main-text-color-light);
     letter-spacing: 0.03em;
     /*color: var(--main-text-color-light);*/
     color: #757575;
+    
 }
-
+.team {
+    /*position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;*/
+    
+    background: #F5F4FA;
+}
 /* ================= TEAM ================= */
 /* ================= FOOTER ================= */
 .contact-info-list-link{
@@ -154,6 +167,9 @@ color: var(--main-text-color-light);
 .contact-info-list-link:focus {
      /*color: #2196F3;*/
     color: var(--alt-color);
+}
+.footer {
+    background: #2F303A;
 }
 /* ================= FOOTER ================= */
 /* ================= FILTER ================= */
