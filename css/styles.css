@@ -92,9 +92,12 @@ font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.88;
     background-color: #2196F3;
-    
+    width: 200px;
+    height: 50px;
     color: #FFFFFF;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -122,9 +125,21 @@ color: var(--main-text-color-light);
 }
 /* ================= ADVANTAGES ================= */
 /* ================= ABOUT ================= */
-
+.works-list {
+    display: flex;
+}
 /* ================= ABOUT ================= */
 /* ================= TEAM ================= */
+.team-list {
+    display: flex;
+    justify-content: center;
+    }
+.team-list-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+
+}
 .team-list-name {
     font-weight: 500;
     font-size: 16px;
@@ -180,28 +195,45 @@ color: var(--main-text-color-light);
     line-height: 1.62;
     letter-spacing: 0.03em;
     background: #F5F4FA;
-    
+    width: 130px;
+    height: 38px;
+    border-radius: 4px;
     cursor: pointer;
     }
 .filter-btn:hover,
 .filter-btn:focus {
-color: #FFFFFF;
+    color: #FFFFFF;
     background: #2196F3;
 }
 /* ================= FILTER ================= */
 /* ================= CARDS================= */
+.site-list  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.site-list-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
 .site-list-name {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-
+color: #212121;
+}
+.site-list-link {
+    text-decoration: none;
+    list-style: none;
+    
+    
 }
 .site-list-position {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-      
     letter-spacing: 0.03em;
     /*color: var(--main-text-color-light);*/
     color: #757575;
