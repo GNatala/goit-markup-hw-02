@@ -1,8 +1,8 @@
 :root {
     --main-font: 'Roboto', sans-serif;
    --secondary-font: 'Raleway', sans-serif;
-   --main-text-color-dark: color: #212121;
-    --main-text-color-light: color: #757575;
+   --main-text-color-dark: #212121;
+    --main-text-color-light: #757575;
     --alt-color: #2196F3;    
     /*--main-text-color-theme-light: #303030;
     --secondary-text-color-theme-light: #555555;
@@ -12,6 +12,7 @@
 body {
     font-family: var(--main-font);
     color: var(--main-text-color-dark);
+    background: #FFFFFF;
 }
 
 .list {
@@ -21,6 +22,7 @@ body {
 .link {
     text-decoration: none;
 }
+
 .suptitle-theme {
     font-weight: 700;
     font-size: 36px;
@@ -60,6 +62,9 @@ body {
     /*color: #2196F3;*/
     color: var(--alt-color);
 }
+.active {
+    color: var(--alt-color);
+}
 .contact-top-link {
     font-weight: 500;
     font-size: 14px;
@@ -75,6 +80,9 @@ body {
 }
 /* ================= HEADER ================= */
 /* ================= HERO ================= */
+.hero-header {
+    background: #2F303A;
+}
 .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -83,30 +91,49 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
 
 }
 .main-btn {
-font-family: 'Roboto';
+    font-family: 'Roboto';
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    background-color: #2196F3;
-    width: 200px;
-    height: 50px;
+    background-color: var(--alt-color);
     color: #FFFFFF;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    letter-spacing: 0.06em;
+        
 }
 .main-btn:hover,
 .main-btn:focus {
    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;*/
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 }
 
 /* ================= HERO ================= */
 /* ================= ADVANTAGES ================= */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .advantages-list-title {
     font-weight: 700;
     font-size: 14px;
@@ -169,6 +196,32 @@ color: var(--main-text-color-light);
 }
 /* ================= TEAM ================= */
 /* ================= FOOTER ================= */
+.footer {
+    background: #2F303A;
+    
+}
+.site-logo-footer {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.contact-info-list-link-map {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        letter-spacing: 0.03em;
+    
+        color: #FFFFFF;
+    }
+.contact-info-list-link-map:hover,
+.contact-info-list-link-map:focus {
+    /*color: #2196F3;*/
+    color: var(--alt-color);
+}
 .contact-info-list-link{
      font-weight: 400;
     font-size: 14px;
@@ -183,27 +236,31 @@ color: var(--main-text-color-light);
      /*color: #2196F3;*/
     color: var(--alt-color);
 }
-.footer {
-    background: #2F303A;
-}
+
 /* ================= FOOTER ================= */
 /* ================= FILTER ================= */
+.filter-list {
+    display: flex;
+    justify-content: center;
+}
 .filter-btn {
-
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     background: #F5F4FA;
-    width: 130px;
-    height: 38px;
+    /*width: 130px;
+    height: 38px;*/
     border-radius: 4px;
     cursor: pointer;
-    }
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid #EEEEEE;
+}
 .filter-btn:hover,
 .filter-btn:focus {
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--alt-color);
 }
 /* ================= FILTER ================= */
 /* ================= CARDS================= */
